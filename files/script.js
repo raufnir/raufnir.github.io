@@ -33,9 +33,9 @@ window.onscroll = () => {
 
 /*========== Typing animation in home page ==========*/
 var typed = new Typed(".text", {
-    strings: ["Web Analytics" , "Server Site Tracking", "Business Intelligence"],
-    typeSpeed:100,
-    backSpeed:100,
+    strings: ["Google Analytics 4" ,"Google Tag Manager", "Google Ads Conversion Tracking", "Facebook Pixel / Conversion API"],
+    typeSpeed:70,
+    backSpeed:20,
     backDelay:1000,
     loop:true
 });
