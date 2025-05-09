@@ -77,15 +77,26 @@ body {
 }
 
 .navbar a:hover {
-    color: #0ef;
-    text-decoration: underline;
+    color: #ffff00; /* Bright yellow */
+    text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00, 0 0 50px #ffff00;
+    animation: hoverGlow 1.5s infinite alternate;
 }
 
 .navbar .active {
-    color: #0ef;
-    text-decoration: underline;
+    color: #00ffff; /* Bright blue */
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
+    font-weight: bold;
+    animation: glow 1.1s infinite alternate;
 }
 
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
+    }
+    to {
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 50px #00ffff;
+    }
+    }
 /*======================home=================*/
 
 .home {
