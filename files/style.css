@@ -70,8 +70,7 @@ body {
     font-size: 25px;
     color: #fff;
     text-decoration: none;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+    font-family: 'Cinzel', 'Rubik', sans-serif;
     margin-left: 35px;
     transition: .3s;
 }
