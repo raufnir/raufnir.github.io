@@ -535,7 +535,8 @@ body {
     
 }
 .subtitle span {
-    color: #0ef;
+    color: rgb(1, 36, 73);
+    text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00, 0 0 50px #ffff00;
 }
 .skills-container {
     margin-left: 10%;
