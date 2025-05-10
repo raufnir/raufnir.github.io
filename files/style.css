@@ -48,7 +48,13 @@ body {
     font-weight: 1000;
     letter-spacing: 1px;
 }
-
+.click h4 {
+    font-family: 'Agustina', 'Rubik', sans-serif;
+    font-size: 2.2rem;
+    color: #e6f205;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
 .menu-toggle {
     display: none;
 }
@@ -290,6 +296,15 @@ body {
 
 .about-text h2 span {
     color: #0ef;
+}
+
+.about-text h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.about-text h3 span {
+    color: rgb(255, 234, 0);
 }
 
 .about-text p {
