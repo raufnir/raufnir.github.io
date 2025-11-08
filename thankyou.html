@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Rauf's Portfolio</title>
+    <!-- Boxicons for icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #181818 0%, #232526 70%);
+            color: #fafafc;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .thank-container {
+            background: rgba(30,34,40,0.95);
+            border-radius: 22px;
+            box-shadow: 0 4px 32px 8px rgba(50,50,50,0.12);
+            max-width: 430px;
+            padding: 2.5rem 2.4rem 2rem;
+            text-align: center;
+            animation: floatin 1.2s cubic-bezier(0.36,2,0.55,1.2);
+        }
+        @keyframes floatin {
+            0%{ transform: translateY(40px) scale(0.9); opacity: 0; }
+            100%{ transform: none; opacity: 1; }
+        }
+        .thank-container .icon {
+            background: linear-gradient(120deg, #12c2e9 0%, #c471ed 100%);
+            color: #fff;
+            font-size: 3.5rem;
+            border-radius: 50%;
+            margin-bottom: .8rem;
+            box-shadow: 0 4px 16px 4px rgba(100,90,180,0.13);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 68px;
+            height: 68px;
+        }
+        .thank-container h2 {
+            margin: 0.8rem 0 0.2rem 0;
+            letter-spacing: 1.5px;
+            font-size: 2.1rem;
+            font-weight: 700;
+            background: linear-gradient(90deg,#12c2e9,#c471ed,#f64f59);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .thank-container p.main-msg {
+            font-size: 1.09rem;
+            margin: 1rem 0 0.55rem 0;
+            color: #ccccdd;
+        }
+        .thank-container .btn-home {
+            display: inline-block;
+            background: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            outline: none;
+            border-radius: 2rem;
+            padding: 0.73rem 1.8rem;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 24px 3px rgba(70,70,160,0.13);
+            cursor: pointer;
+            margin-top: 1.5rem;
+            transition: background 0.22s;
+            text-decoration: none;
+        }
+        .thank-container .btn-home:hover {
+            background: linear-gradient(90deg, #f64f59, #12c2e9, #c471ed);
+        }
+        .thank-container .sos-wrapper {
+            margin-top: 1.4rem;
+        }
+        .thank-container .sos-wrapper a {
+            margin: 0 .4rem;
+            font-size: 2rem;
+            color: #f3cfff;
+            opacity: 0.85;
+            transition: color 0.14s, opacity 0.14s;
+        }
+        .thank-container .sos-wrapper a:hover {
+            color: #12c2e9;
+            opacity: 1;
+        }
+        @media (max-width: 550px) {
+            .thank-container {
+                margin: 1rem;
+                padding: 2.1rem 1rem 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-container">
+        <div class="icon">
+            <i class="bx bxs-check-circle"></i>
+        </div>
+        <h2>Thank You!</h2>
+        <p class="main-msg">
+            Your message was sent successfully.<br>
+            I appreciate your interest and will reply <b>as soon as possible</b>.<br>
+            Until then, feel free to connect with me on my networks below!
+        </p>
+        <a href="https://raufnir.github.io" class="btn-home"><i class='bx bx-home'></i> Back to Home</a>
+        <div class="sos-wrapper">
+            <a href="https://github.com/raufnir" title="GitHub" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://linkedin.com/in/raufnir" title="LinkedIn" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://youtube.com/@raufnir" title="YouTube" target="_blank"><i class='bx bxl-youtube'></i></a>
+            <a href="https://www.x.com/raufnir" title="X / Twitter" target="_blank"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </div>
+</body>
+</html>
