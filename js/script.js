@@ -239,3 +239,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('thank-message').style.display = 'block';
+    this.reset();
+});
