@@ -243,6 +243,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    document.getElementById('thank-message').style.display = 'block';
-    this.reset();
+    const form = this;
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            document.getElementById('thank-message').style.display = 'block';
+            form.reset();
+        } else {
+            alert("There was a problem submitting your form. Please try again.");
+        }
+    })
+    .catch(error => {
+        alert("There was a problem submitting your form. Please try again.");
+    });
 });
