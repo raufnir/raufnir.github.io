@@ -1,471 +1,618 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-   
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rauf's Portfolio</title>
+    <!-- boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./image/favicon.png">
 
-        <!--========Meta Tags SEO======-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A passionate 'Web Developer' | 'Python Developer' from India. This portfolio showcasing projects, skills, and experiences in web development, software engineering, and more. Discover my work, professional journey, and get in touch for collaborations.">
-        <meta name="keywords" content="Portfolio, Web Developer, Python Developer, Software Engineer, Python Full Stack Developer">
-        
-        <!--=========Canonical Tag=======-->
-        <link rel="canonical" href="https://vsmidhun.site">
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-K8RL4TZH');</script>
-        <!-- End Google Tag Manager -->
-        <!-- Link to Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@700&display=swap" rel="stylesheet">
-        <style>
-            h1, h3 {
-                font-family: 'Roboto', sans-serif; /* Modern and confident font for other headings */
-                color: #ffffff;
-                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            }
-            h1 {
-                font-size: 3em;
-                color: #00bcd4; /* Teal color for professional appeal */
-            }
-            h3 {
-                font-size: 1.8em;
-                color: #4caf50; /* Green for confidence and trust */
-            }
-            .name {
-                font-family: 'Great Vibes', cursive; /* Elegant and attractive font for your name */
-                font-size: 3.5em; /* Slightly larger to make it stand out */
-                color: #ffffff; /* White for contrast */
-                text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* More prominent shadow for emphasis */
-            }
-        </style>
+</head>
 
-
-        <!--========Social Media Tag=========-->
-        <meta property="og:title" content="Rauf Ibna Rafiq">
-        <meta property="og:description" content="A passionate 'Web Developer' | 'Python Developer' from India. This portfolio showcasing projects, skills, and experiences in web development, software engineering, and more. Discover my work, professional journey, and get in touch for collaborations.">
-        <meta property="og:image" content="https://vsmidhun21.github.io/img/Preview.png">
-        <meta property="og:url" content="https://vsmidhun.site">
-        <meta property="og:type" content="website">
-
-        <!--========Title===== -->
-        <title>Rauf's Portfolio</title>
-
-        <!--========Site Icon===== -->
-        <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
-
-        <!--========Stylesheet===== -->
-        <link rel="stylesheet" href='./files/style.css'>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;display=swap">
-
-        <!--========BoxIcons===== -->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-        <!--========TailwindCSS===== -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!--========TypedJS===== -->
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        <!--========JSON Script======-->
-        <script type="application/ld+json">
-        
-        </script>
-    </head>
-    <body>
-
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WM6GL3LW"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-
-
-        <!-- =========================================NavBar========================================= -->
-        <header class="header" id="header">
-            <a class="logo" href="https://raufnir.github.io">Rauf Ibna Rafiq</a>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon"><i class='bx bx-menu'></i></label>
-            <nav class="navbar" id="myLinks">
-                <a href="#Home" style="--i:1" class="active" >Home</a>
-                <a href="#About" style="--i:2">About</a>
-                <a href="#Skills" style="--i:3">Skills</a>
-                <a href="#Projects" style="--i:4">Projects</a>
-                <a href="#Contact" style="--i:5">Contact</a>
-            </nav>
-        </header>
-
-        <!-- =========================================Home========================================= -->
-        <section class="home" id="Home">
-            <div class="home-content">
+<body>
+    <!-- header -->
+    <header>
+        <a href="https://raufnir.github.io" class="logo">Rauf R.</a>
                 
-                <h3>Happy to see you here✨</h3>
-                <h1>Rauf Ibna Rafiq </h1>
-                <h4 style="--i:6">I'm a <span>Web Analyst</span> specializing in<br>optimizing digital businesses through <span class="text"></span></h4>
-                
-                <div class="img">
-                    <img src="./img/avathar.png" class="responsive" alt="Name">
-                </div>
+        <!-- <i class="bx bx-menu" id="menu-icon"></i> -->
+        <div class="availability">
+            <span class="dot"></span>
+            <span class="available-text">AVAILABLE FOR WORK</span>
+            <i class="bx bxl-linkedin"></i>
+        </div>
 
-                <div class="home-sci">
-                    <a href="https://www.linkedin.com/in/raufnir"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://x.com/raufnir" style="--i:8" target="_blank">
-                    <i class='bx bxl-twitter'></i></a>
-                    <a href="https://wa.me/8801796553402"style="--i:9" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
-                    <a href="https://www.facebook.com/raufnir.in" style="--i:10" target="_blank">
-                    <i class='bx bxl-facebook'></i>
-                </div>
-                <a href=https://calendar.app.google/6pEkvTcJAW5BKyqp8 style="--i:11" class="btn-box" target="_blank">Book 30min 1:1 Audit Meeting Online</a>
-            </div>
-        </section>
+        <div class="floating-nav-frame">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#resume" class="nav-link">Why Hire Me?</a>
+            <!-- <a href="#projects" class="nav-link">Projects</a> -->
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </header>
 
-        <!-- =========================================About========================================= -->
-        <section id="About">
-            <div class="about reveal">
-                <div class="custom-shape-divider-top-1720508545">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-                    </svg>
-                </div>
 
-                    <div style="width: 100%; max-width: 800px; margin: 20px auto;">
-                            <div class="click">
-                                <h4>Click 👇 <br> to Watch</h4><br>
-                            </div>
-                        
-                        <iframe
-                            src="https://www.youtube.com/embed/9aEcM7xP3Qs"
-                            title="Fix your Analytics and Conversion Tracking issues."
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                            style="
-                            display: block;        /* remove inline-element gaps */
-                            width: 100%;
-                            aspect-ratio: 16 / 9;  /* lock in 16:9 always */
-                            border: 0;
-                            "
-                        ></iframe>
-                    </div>
 
-                <div class="about-text reveal">
-                    <h2>About <span>Me</span></h2>
-                    <p>I'm a Smart working engineering graduate specialized in Electronics and          Communication Engineering.
-                        Along with my degree, I completed Python, SQL, Java, Cybersecurity courses and various technologies.
-                        I learnt has helped me develop a project called "Drowsiness Detection & Alerting System".
-                        It was during this project that I discovered that I am a team player.
-                        I am currently seeking roles where I can utilize my experience and skill.<br>
-                        <br>
-                        <a href="./files/timeline.html" style="--i:11" class="abtbtn-box">Previous Work & Client Reviews</a>
-                    </p>
-                </div>
 
-                <div class="custom-shape-divider-bottom-1720509106">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-                    </svg>
-                </div>
-            </div>
-        </section>
+    <!-- Home section -->
 
-        <!-- =========================================Skills========================================= -->
-        <section id="Skills">
-            <h1 class="subtitle reveal">My <span>Skills</span></h1>
-            <div class="skills-container">
-                <!-- Skill 1 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/pixel.png" alt="Pixel">
-                    <p>Facebook Pixel</p>
-                </div>
+    <section id="home" class="home active">
+        <div class="home-detail">
 
-                <!-- Skill 2 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/ga4.png" alt="Google Analytics 4">
-                    <p>Google Analytics</p>
-                </div>
+            <h2> <i> < < Hey, I'm</i></h2>
+            <h1>Rauf Ibna Rafiq > >  </h1>
+            <h2>A
+                <span style="--i:1;" data-text="Power BI Developer">Power BI Developer</span>
+                <span style="--i:2;" data-text="Data Storyteller">Data Storyteller</span>
+                <span style="--i:3;" data-text="BI Analyst">BI Analyst</span>
+                <span style="--i:4;" data-text="Data-Driven Strategist">Data-Driven Strategist</span>
 
-                <!-- Skill 3 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/gtm.png" alt="Google Tag Manager">
-                    <p>Google Tag Manager</p>
-                </div>
 
-                <!-- Skill 4 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/gads.png" alt="Google Ads Conversion Tracking">
-                    <p>Google Ads</p>
-                </div>
-
-                <!-- Skill 5 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/shopify.png" alt="Shopify">
-                    <p>Shopify</p>
-                </div>
-
-                <!-- Skill 6 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/meta.png" alt="Meta">
-                    <p>Meta CAPI</p>
-                </div>
-
-                <!-- Skill 7 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/bing.png" alt="Bing">
-                    <p>Bing Ads</p>
-                </div>
-
-                <!-- Skill 8 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/stape.png" alt="Stape">
-                    <p>Stape Setup</p>
-                </div>
-
-                <!-- Skill 9 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/clickfunnel.png" alt="ClickFunnel">
-                    <p>ClickFunnel</p>
-                </div>
-
-                <!-- Skill 10 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/looker.png" alt="Looker">
-                    <p>Looker Studio</p>
-                </div>
-
-                <!-- Skill 11 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/wordpress.png" alt="WordPress">
-                    <p>WordPress</p>
-                </div>
-
-                <!-- Skill 12 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/react.png" alt="React">
-                    <p>React</p>
-                </div>
-
-                <!-- Skill 13 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/js.png" alt="JavaScript">
-                    <p>JavaScript</p>
-                </div>
-
-                <!-- Skill 14 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/html-5.png" alt="HTML-5">
-                    <p>HTML</p>
-                </div>
-
-                <!-- Skill 15 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/css-3.png" alt="CSS-3">
-                    <p>CSS</p>
-                </div>
-
-                <!-- Skill 16 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/python.png" alt="Python">
-                    <p>Python</p>
-                </div>
-                <!-- Skill 21 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/wix.png" alt="Wix">
-                    <p>Wix</p>
-                </div>
-                <!-- Skill 22 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/pinterest.png" alt="Pinterest">
-                    <p>Pinterest</p>
-                </div>
-                <!-- Skill 24 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/tiktok.png" alt="TikTok">
-                    <p>TikTok</p>
-                </div>
-                <!-- Skill 23 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/bigquery.png" alt="BigQuery">
-                    <p>BigQuery</p>
-                </div>
-
-                <!-- Skill 17 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/gohighlevel.png" alt="GoHighLevel">
-                    <p>GoHighLevel</p>
-                </div>
-
-                <!-- Skill 18 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/hubspot.png" alt="HubSpot">
-                    <p>HubSpot</p>
-                </div>
-
-                <!-- Skill 19 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/woocomerce.png" alt="WooCommerce">
-                    <p>WooCommerce</p>
-                </div>
-
-                <!-- Skill 20 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/zapier.png" alt="Zapier">
-                    <p>Zapier</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!--========================Projects============================-->
-        <section id="Projects" class="prj reveal">
-            <div class="featured-projects-box reveal">
-                <h2>My <span>Projects</span></h2>
-                <div class="separator">
-                </div>
-
-                <!--==================Project #1======================-->
-                <div class="project project1 reveal">
-                    <div class="project-details-box">
-                        <div class="project-main-info">
-                            <span>Project #1</span>
-                            <h3>Drowsiness Detection</h3>
-                            <p>
-                                The face of the driver is captured and right && left eyes are detected.
-                                If eye is closed the source value will be incremented.
-                                When the value reaches 4 or more the alarm sound will be played.
-                                Those score value will be send to the cloud simultaneously.
-                            </p>
-                            <div class="project-icons">
-                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bxl-github'></i></a>
-                                <a href="https://youtu.be/xlH6WHzobcc", target="_blank"><i class='bx bx-link-external'></i></a>
-                            </div>
-                        </div>
-                        <div class="project-tools">
-                            <p>Python, OpenCV, IBM Cloud</p>
-                        </div>
-                    </div>
-                    <div class="project-image-box">
-                        <a href="https://youtu.be/xlH6WHzobcc", target="_blank", class="project-img-link">
-                            <img src="./img/project1.png" alt="Project Preview Image" />
-                        </a>
-                    </div>
-                </div>
-
-                <!--===============Project #2=============-->
-                <div class="project project2 reveal">
-                    <div class="project-details-box">
-                        <div class="project-main-info">
-                            <span>Project #2</span>
-                            <h3>Desktop Application</h3>
-                            <p>
-                                A windows application to manage the work of the staff’s in the company.
-                                The application will get the details of the work progress of the employee and store in the database.
-                                Also the manager can generate report from those data easily using the application.
-                            </p>
-                            <div class="project-icons">
-                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bxl-github'></i></a>
-                                <a href="https://youtu.be/szw4Al6vDFs", target="_blank"><i class='bx bx-link-external'></i></a>
-                            </div>
-                        </div>
-                        <div class="project-tools">
-                            <p>Python, Tkinter, MS SQL Server</p>
-                        </div>
-                    </div>
-                    <div class="project-image-box">
-                        <a href="https://youtu.be/szw4Al6vDFs", target="_blank", class="project-img-link">
-                            <img src="./img/project2.png" alt="Project Preview Image" />
-                        </a>
-                    </div>
-                </div>
-
-                <!--===========================Project #3==================-->
-                <div class="project project1 reveal">
-                    <div class="project-details-box">
-                        <div class="project-main-info">
-                            <span>Project #3</span>
-                            <h3>Leaf Disease Detection</h3>
-                            <p>
-                                The program will get leaf image as input.
-                                By analyzing the color, holes etc. the disease of the leaf is identified.
-                                After analyzing if there is any disease is spotted then the name of the disease is displayed.
-                                If no disease found then "Healthy Leaf" will be displayed as output.
-                            </p>
-                            <div class="project-icons">
-                                <a href="https://github.com/raufnir", target="_blank"><i class='bx bxl-github'></i></a>
-                                <a href="https://youtu.be/_VlrYOOJYhQ", target="_blank"><i class='bx bx-link-external'></i></a>
-                            </div>
-                        </div>
-                        <div class="project-tools">
-                            <p>Python, OpenCV, Tkinter</p>
-                        </div>
-                    </div>
-                    <div class="project-image-box">
-                        <a href="https://youtu.be/_VlrYOOJYhQ", target="_blank", class="project-img-link">
-                            <img src="./img/project1.png" alt="Project Preview Image" />
-                        </a>
-                    </div>
-                </div>
-
-                <!--===============Project #4=============-->
-                <div class="project project2 reveal">
-                    <div class="project-details-box">
-                        <div class="project-main-info">
-                            <span>Project #4</span>
-                            <h3>Cement Bag Automation</h3>
-                            <p>
-                                The program gets input from the live camera and convert to separate frames.
-                                The frames will detect the cement bag in the conveyor.
-                                When the cement bags cross a point then the count of the cement bag is incremented and the data will be stored in the database with exact datetime.
-                            </p>
-                            <div class="project-icons">
-                                <a href="https://github.com/vsmidhun21", target="_blank"><i class='bx bxl-github'></i></a>
-                                <a href="https://youtu.be/Tu7Bp2tmdas", target="_blank"><i class='bx bx-link-external'></i></a>
-                            </div>
-                        </div>
-                        <div class="project-tools">
-                            <p>Python, OpenCV, YOLO, SQL</p>
-                        </div>
-                    </div>
-                    <div class="project-image-box">
-                        <a href="https://youtu.be/Tu7Bp2tmdas", target="_blank", class="project-img-link">
-                            <img src="./img/project2.png" alt="Project Preview Image" />
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!--====================== Contact =============================== -->
-        <section class="contacts" id="Contact">
-            <div class="contact-text reveal">
-                <h2>Contact <span>Me</span></h2>
-                <center><h4>Get in Touch</h4>
-                <div class="contact-list">
-                    <li><i class="bx bxl-whatsapp" ></i>+880 1796-553402</li>
-                    <li><i class='bx bxl-gmail'></i>raufnir.in@gmail.com</li>
-                    <li><i class='bx bxs-location-plus' ></i>Dinajpur, Bangladesh</li>
+            </h2>
+            <p>Curious | Data Enthusiast | Lifelong Learner</p>
+            <div class="btn-sci">
+                <a href="files/rauf_resume.pdf" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="https://github.com/raufnir" target="_blank">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://youtube.com/@raufnir" target="_blank">
+                        <i class="bx bxl-youtube"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/raufnir" target="_blank">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="https://www.x.com/raufnir" target="_blank">
+                        <i class="bx bxl-twitter"></i>
+                    </a> 
                     
-                </div>
-                <div class="contact-icons">
-                    <a href="https://medium.com/@raufnir" target="_blank"><i class='bx bxl-medium'></i></a>
-                    <a href="https://t.me/raufnir" target="_blank"><i class='bx bxl-telegram'></i></a>
-                    <a href="https://github.com/raufnir" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://discord.com/users/1363686010877382819" target="_blank"><i class='bx bxl-discord'></i></a>
-                </div>
-                </center>
-                <div class="last-text">
-                    <p>Redesigned by Rauf <i class='bx bx-copyright' style="color: white;"></i> 2024</p>
+                    <a href="https://wa.me/8801796553402" target="_blank">
+                    <i class="bx bxl-whatsapp"></i>
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!--====================== Go Top Icon =============================== -->
-        <a href="#Home" class="top"><i class='bx bx-up-arrow-alt' ></i> </a>
+        <div class="home-image">
+            <div class="image-box">
+                <div class="image-item">
+                    <img src="image/avathar.png" class="img">
+                </div>
+            </div>
+        </div>
 
-        <!--========Scripts===== -->
-        <script src="./files/script.js"></script>
+    </section>
 
-    </body>  
+    <!-- service section -->
+
+
+    <!-- নিউ পার্ট -->
+    <section id="services" class="services active">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box" onclick="openServicePopup('dashboard')">
+                <div class="icon">
+                    <i class='bx bxs-pie-chart-alt-2 bx-flip-vertical'></i>
+                    <a href=""><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Dashboard Design</h3>
+                <p>Interactive and insightful dashboards...</p>
+            </div>
+
+            <div class="services-box" onclick="openServicePopup('webscraping')">
+                <div class="icon">
+                    <i class='bx bxs-pie-chart-alt bx-tada'></i>
+                    <a href=""><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Web Scraping</h3>
+                <p>Automated data extraction solutions...</p>
+            </div>
+
+            <div class="services-box" onclick="openServicePopup('segmentation')">
+                <div class="icon">
+                    <i class='bx bx-bar-chart'></i>
+                    <a href=""><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Power BI Customer Segmentation</h3>
+                <p>Advanced customer analytics...</p>
+            </div>
+
+            <div class="services-box" onclick="openServicePopup('datacleaning')">
+                <div class="icon">
+                    <i class='bx bxs-pie-chart-alt-2 bx-flip-vertical'></i>
+                    <a href=""><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Python Data Cleaning Project</h3>
+                <p>Professional data preprocessing...</p>
+            </div>
+
+            <div class="services-box" onclick="openServicePopup('timeseries')">
+                <div class="icon">
+                    <i class='bx bxs-pie-chart-alt bx-tada'></i>
+                    <a href=""><i class="bx bx-arrow-back"></i></a>
+                </div>
+                <h3>Time Series Analysis</h3>
+                <p>Forecasting and trend analysis...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPUP OVERLAY - Add this right before closing </body> tag -->
+    <div id="service-popup-overlay" class="service-popup-overlay" onclick="closeServicePopup()">
+        <div id="service-popup" class="service-popup-container" onclick="event.stopPropagation()">
+            <div class="service-popup-header">
+                <h4 id="popup-title">Service Details</h4>
+                <span class="service-popup-close" onclick="closeServicePopup()">&times;</span>
+            </div>
+            <div class="service-popup-body">
+                <div id="popup-content" class="service-popup-content">
+                    <!-- Content will be inserted here by JavaScript -->
+                </div>
+                <button class="service-popup-btn" onclick="requestQuote()"> View Demos</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- projects -->
+
+    <!-- resume section || it could be any name ok?  -->
+    <!-- i will update this soon -->
+    <section id="resume" class="resume active">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why hire me?</h2>
+                <p class="desc">Comming Soon......</p>
+                <button class="resume-btn active">Experiences</button>
+                <button class="resume-btn">Education</button>
+                <button class="resume-btn">Skills</button>
+                <button class="resume-btn">About Me</button>
+            </div>
+            <div class="resume-box">
+                <div class="resume-detail experience active">
+                    <h2 class="heading">My <span>Experiences</span></h2>
+                    <p class="desc">Comming soon....</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2024-2025 </p>
+                            <h3>Data Manager</h3>
+                            <p class="company">MOSUS</p>
+                            <p>Comming soon.....</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">2025-Present </p>
+                            <h3>Data Manager</h3>
+                            <p class="company">MOSUS</p>
+                            <p>Comming soon.....</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">2024-2025 </p>
+                            <h3>Data Manager</h3>
+                            <p class="company">MOSUS</p>
+                            <p>Comming soon.....</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">2025-Present </p>
+                            <h3>Data Manager</h3>
+                            <p class="company">MOSUS</p>
+                            <p>Comming soon.....</p>
+                        </div>
+
+
+
+                        <div class="resume-item">
+                            <p class="year">2025-Present </p>
+                            <h3>Data Manager</h3>
+                            <p class="company">MOSUS</p>
+                            <p>Comming soon.....</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2025-Present </p>
+                            <h3>Data Manager</h3>
+                            <p class="company">MOSUS</p>
+                            <p>Comming soon.....</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">2025-Present </p>
+                            <h3>Data Manager</h3>
+                            <p class="company">MOSUS</p>
+                            <p>Comming soon.....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-detail education">
+                    <h2 class="heading">My <span>Education</span></h2>
+                    <p class="desc">Comming soon....</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2024</p>
+                            <h3>Web Scrapping by Selenium</h3>
+                            <p class="company">Upwork</p>
+                            <p>Comming soon.....</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2024</p>
+                            <h3>Web Scrapping by Selenium</h3>
+                            <p class="company">Upwork</p>
+                            <p>Comming soon.....</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2024</p>
+                            <h3>Web Scrapping by Selenium</h3>
+                            <p class="company">Upwork</p>
+                            <p>Comming soon.....</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2024</p>
+                            <h3>Web Scrapping by Selenium</h3>
+                            <p class="company">Upwork</p>
+                            <p>Comming soon.....</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2024</p>
+                            <h3>Web Scrapping by Selenium</h3>
+                            <p class="company">Upwork</p>
+                            <p>Comming soon.....</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-detail skills">
+                    <h2 class="heading">My <span>SKills</span></h2>
+                    <p class="desc">Comming soon....</p>
+                    <div class="resume-list">
+
+                        <div class="resume-item">
+                            <!-- <i class="fa-brands fa-python"></i> -->
+                            <i class='bxl bx-python'></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class="fa-solid fa-file-csv"></i>
+                            <span>Excel</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Power BI</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Tableau</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Looker Studio</span>
+                        </div>
+                        <div class="resume-item">
+                            <span> Pandas</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Seaborn</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>BeautifulSoup4</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Selenium</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Numpy</span>
+                        </div>
+
+                        <div class="resume-item">
+                            <span>Jupyter Notebook</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>VS Code</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>DBeaver</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Adobe Phontoshop</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Adobe Illustrator</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>SPSS</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="resume-detail about">
+                    <h2 class="heading">My <span>About</span></h2>
+                    <p class="desc">Comming soon....</p>
+                    <div class="resume-list">
+
+                        <div class="resume-item">
+                            <!-- <i class="fa-brands fa-python"></i> -->
+                            <span>Mohammad Harun</span>
+
+                        </div>
+
+                        <div class="resume-item">
+                            <span>Full-time Available</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>2+ Years Experiences</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Upwork Raising Talent</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Freelance Available</span>
+                        </div>
+                        <div class="resume-item">
+                            <span>Language: English, Bengali </span>
+                        </div>
+
+                        <div class="resume-item">
+                            <span> Dhaka, Bangladesh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio active">
+        <div class="portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="heading">My <span>Portfolio</span></h2>
+                    <p class="section-subtitle">Explore my latest projects and see how I bring ideas to life through
+                        code
+                        and design</p>
+                </div>
+
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-scroll">
+                        <!-- First set -->
+                        <div class="portfolio-card">
+                            <div class="card-image project-1">
+                                <img src="image\Dashboard.jpg" alt="E-Commerce Dashboard Project">
+                                <div class="card-overlay">
+                                    <a href="#" class="view-project">View Project</a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">E-Commerce Dashboard</h3>
+                                <p class="card-description">A comprehensive admin dashboard for managing e-commerce
+                                    operations with real-time analytics and inventory management.</p>
+                                <div class="card-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                </div>
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <div class="stat-value">25+</div>
+                                        <div class="stat-label">Features</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">98%</div>
+                                        <div class="stat-label">Performance</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">3 Mo</div>
+                                        <div class="stat-label">Duration</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-card">
+                            <div class="card-image project-2">
+                                <img src="image\Dashboard.jpg" alt="E-Commerce Dashboard Project">
+                                <div class="card-overlay">
+                                    <a href="#" class="view-project">View Project</a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Task Management App</h3>
+                                <p class="card-description">Collaborative task management platform with team features,
+                                    time
+                                    tracking, and project visualization tools.</p>
+                                <div class="card-tags">
+                                    <span class="tag">Vue.js</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Tailwind</span>
+                                </div>
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <div class="stat-value">15+</div>
+                                        <div class="stat-label">Users</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">95%</div>
+                                        <div class="stat-label">Uptime</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">2 Mo</div>
+                                        <div class="stat-label">Duration</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-card">
+                            <div class="card-image project-3">
+                                <img src="image\Dashboard.jpg" alt="E-Commerce Dashboard Project">
+                                <div class="card-overlay">
+                                    <a href="#" class="view-project">View Project</a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">AI Chat Interface</h3>
+                                <p class="card-description">Modern chat interface with AI integration, real-time
+                                    messaging,
+                                    and intelligent conversation handling.</p>
+                                <div class="card-tags">
+                                    <span class="tag">Next.js</span>
+                                    <span class="tag">OpenAI</span>
+                                    <span class="tag">Socket.io</span>
+                                </div>
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <div class="stat-value">10K+</div>
+                                        <div class="stat-label">Messages</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">99%</div>
+                                        <div class="stat-label">Accuracy</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">4 Mo</div>
+                                        <div class="stat-label">Duration</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-card">
+                            <div class="card-image project-4">
+                                <img src="image\Dashboard.jpg" alt="E-Commerce Dashboard Project">
+                                <div class="card-overlay">
+                                    <a href="#" class="view-project">View Project</a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Fitness Tracker</h3>
+                                <p class="card-description">Mobile-first fitness tracking application with workout
+                                    plans,
+                                    progress monitoring, and social features.</p>
+                                <div class="card-tags">
+                                    <span class="tag">React Native</span>
+                                    <span class="tag">GraphQL</span>
+                                    <span class="tag">AWS</span>
+                                </div>
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <div class="stat-value">500+</div>
+                                        <div class="stat-label">Downloads</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">4.8</div>
+                                        <div class="stat-label">Rating</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">5 Mo</div>
+                                        <div class="stat-label">Duration</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-card">
+                            <div class="card-image project-5">
+                                <img src="image\Dashboard.jpg" alt="E-Commerce Dashboard Project">
+                                <div class="card-overlay">
+                                    <a href="#" class="view-project">View Project</a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Data Visualization Tool</h3>
+                                <p class="card-description">Interactive data visualization platform with customizable
+                                    charts, real-time updates, and export capabilities.</p>
+                                <div class="card-tags">
+                                    <span class="tag">D3.js</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">PostgreSQL</span>
+                                </div>
+                                <div class="card-stats">
+                                    <div class="stat">
+                                        <div class="stat-value">20+</div>
+                                        <div class="stat-label">Chart Types</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">1M+</div>
+                                        <div class="stat-label">Data Points</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-value">3 Mo</div>
+                                        <div class="stat-label">Duration</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- contact section  -->
+    <section id="contact" class="contact active">
+        <div class="contact-container "></div>
+        <div class="contact-box">
+            <h2>Let's work together</h2>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, cupiditate neque qui
+                dolorum eos voluptas voluptate omnis nostrum, sed tempore autem accusantium magnam voluptatem tenetur
+                earum dicta nam eaque totam?</p>
+            <div class="contact-detail">
+                <i class="bx bxs-phone"></i>
+                <div class="detail">
+                    <a href="tel:+8801796553402">
+                    <p>Phone</p></a>
+                    <p style="margin-right: 4rem;">+8801796553402  </p>
+                </div>
+                <div class="contact-detail">
+                <i class="bx bxs-envelope"></i>
+                <div class="detail">
+                    <a href="mailto:raufnird@gmail.com">
+                    <p>Email</p></a>
+                    <p>raufnird@gmail.com</p>
+                </div>
+                </div>
+        </div>
+
+        <div class="contact-box">
+
+            <form action="https://formsubmit.co/iwilltieyou@gmail.com" method="POST">
+
+                <h2 class="heading">Contact <span>Me</span></h2>
+                <div class="field-box">
+                    <input type="text" placeholder="full name" required>
+                    <input type="email" placeholder="email address" required>
+                    <input type="text" placeholder="phone number" required>
+                    <input type="text" placeholder="email subject" required>
+                    <textarea name="" id="" placeholder="your message" required></textarea>
+
+                </div>
+                <button type="submit" , class="btn">send message</button>
+            </form>
+
+        </div>
+        </div>
+
+    </section>
+    
+
+
+    <script src="js/script.js"> </script>
+</body>
+<footer>
+    <p>&copy; 2025 Rauf R. All rights reserved.</p>
+</footer>
+
 </html>

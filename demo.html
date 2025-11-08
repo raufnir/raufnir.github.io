@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Navigation with Section Linking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        /* Floating Navigation Styles */
+        .floating-nav-frame {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-link {
+            color: #ddd;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 5px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-link i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        
+        .nav-link.active {
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
+        }
+        
+        /* Section Styles */
+        section {
+            min-height: 100vh;
+            padding: 100px 50px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #ffcc00;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 100%;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            transition: transform 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #4dabf7;
+        }
+        
+        .card i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        
+        
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .floating-nav-frame {
+                width: 95%;
+                overflow-x: auto;
+                padding: 8px 10px;
+                white-space: nowrap;
+            }
+            
+            .nav-link {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <div class="floating-nav-frame">
+        <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+        <a href="#services" class="nav-link"><i class="fas fa-cogs"></i> Services</a>
+        <a href="#blog" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
+        <a href="#projects" class="nav-link"><i class="fas fa-tasks"></i> Projects</a>
+        <a href="#portfolio" class="nav-link"><i class="fas fa-briefcase"></i> Portfolio</a>
+        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to My Website</h1>
+            <p>This is a demonstration of a floating navigation bar that links to different sections on the page. Scroll down to see how it works!</p>
+            <a href="#services" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>We provide a wide range of professional services to help your business grow.</p>
+            
+            <div class="content-grid">
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with the latest technologies for optimal performance.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android devices.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful and intuitive user interfaces designed to enhance user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            <p>Stay updated with our latest articles and industry insights.</p>
+            
+            <div class="content-grid">
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>React Best Practices</h3>
+                    <p>Learn how to structure your React applications for scalability and maintainability.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-server"></i>
+                    <h3>Serverless Architecture</h3>
+                    <p>Understanding the benefits and challenges of serverless computing in modern apps.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>SEO in 2023</h3>
+                    <p>Latest trends and techniques to improve your website's search engine ranking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <p>Check out some of our most successful projects and case studies.</p>
+            
+            <div class="content-grid">
+                <div class="card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>E-commerce Platform</h3>
+                    <p>A complete online shopping solution with payment integration and inventory management.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Learning Management System</h3>
+                    <p>An educational platform for online courses with progress tracking and certification.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Chatbot</h3>
+                    <p>An intelligent customer support solution using natural language processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <p>A showcase of our best work and client success stories.</p>
+            
+            <div class="content-grid">
+                <div class="card">
+                    <i class="fas fa-building"></i>
+                    <h3>Corporate Websites</h3>
+                    <p>Professional websites for businesses looking to establish their online presence.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Game Development</h3>
+                    <p>Engaging and interactive games for web and mobile platforms.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Visualization</h3>
+                    <p>Complex data presented in intuitive and interactive dashboards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a project in mind? Get in touch with us for a free consultation.</p>
+            
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section> -->
+    
+    <footer>
+        <p >&copy; 2025 Harun Analyst All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active class
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        // Highlight active section in navigation
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 100) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

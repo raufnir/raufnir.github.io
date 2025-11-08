@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    (function() {
+      emailjs.init('harunrhimu@gmail.com');
+    })();
+  
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+  
+      var form = event.target;
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
+        .then(function(response) {
+          alert("Message Sent Successfully!");
+        }, function(error) {
+          alert("Error sending message. Please try again later.");
+        });
+    });
+  </script>
+  
