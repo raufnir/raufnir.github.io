@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/Data Science Learning Roadmap - Bangladesh</title>
+    <style>
+        :root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --status-bg-opacity: 0.15;
+  --status-border-opacity: 0.25;
+
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+    --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+
+    --color-success-rgb: var(--color-teal-300-rgb);
+    --color-error-rgb: var(--color-red-400-rgb);
+    --color-warning-rgb: var(--color-orange-400-rgb);
+    --color-info-rgb: var(--color-gray-300-rgb);
+  }
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: var(--line-height-normal);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Top Navbar */
+.top-navbar {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-16) var(--space-24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.navbar-brand h1 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+}
+
+.navbar-brand .flag {
+  font-size: var(--font-size-2xl);
+}
+
+.navbar-actions {
+  display: flex;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.btn {
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  border: none;
+  transition: all var(--duration-fast) var(--ease-standard);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+/* Main Layout */
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background-color: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  padding: var(--space-24);
+  overflow-y: auto;
+  position: sticky;
+  top: 73px;
+  height: calc(100vh - 73px);
+}
+
+.sidebar h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-16);
+  color: var(--color-text);
+}
+
+.job-role-selector {
+  margin-bottom: var(--space-24);
+}
+
+.job-role-selector label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-8);
+  color: var(--color-text-secondary);
+}
+
+.job-role-selector select {
+  width: 100%;
+  padding: var(--space-8) var(--space-12);
+  border-radius: var(--radius-base);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+}
+
+.progress-tracker {
+  margin-bottom: var(--space-24);
+}
+
+.overall-progress {
+  margin-bottom: var(--space-16);
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-6);
+  color: var(--color-text-secondary);
+}
+
+.progress-bar-container {
+  background-color: var(--color-secondary);
+  border-radius: var(--radius-full);
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: var(--color-primary);
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width var(--duration-normal) var(--ease-standard);
+}
+
+.stage-progress-list {
+  list-style: none;
+}
+
+.stage-progress-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: var(--space-6) 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.stage-progress-item .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-border);
+}
+
+.stage-progress-item.completed .dot {
+  background-color: var(--color-success);
+}
+
+.sidebar-nav {
+  list-style: none;
+}
+
+.sidebar-nav-item {
+  margin-bottom: var(--space-8);
+}
+
+.sidebar-nav-link {
+  display: block;
+  padding: var(--space-8);
+  border-radius: var(--radius-base);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.sidebar-nav-link:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: var(--space-32);
+  overflow-y: auto;
+}
+
+.hero-section {
+  margin-bottom: var(--space-32);
+}
+
+.hero-section h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-12);
+}
+
+.hero-section p {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-16);
+}
+
+.timeline-info {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  background-color: var(--color-bg-1);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+}
+
+/* Stages */
+.stages-container {
+  margin-bottom: var(--space-32);
+}
+
+.stage-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-20);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+.stage-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.stage-header {
+  padding: var(--space-20);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-card-border-inner);
+}
+
+.stage-header:hover {
+  background-color: var(--color-secondary);
+}
+
+.stage-title-section {
+  flex: 1;
+}
+
+.stage-number {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  margin-right: var(--space-12);
+}
+
+.stage-info {
+  display: inline-block;
+}
+
+.stage-info h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-4);
+}
+
+.stage-meta {
+  display: flex;
+  gap: var(--space-16);
+  align-items: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-6);
+}
+
+.stage-expand-icon {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.stage-card.expanded .stage-expand-icon {
+  transform: rotate(180deg);
+}
+
+.stage-content {
+  display: none;
+  padding: var(--space-24);
+}
+
+.stage-card.expanded .stage-content {
+  display: block;
+}
+
+.stage-description {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-24);
+  line-height: 1.6;
+}
+
+/* Steps */
+.steps-list {
+  margin-bottom: var(--space-24);
+}
+
+.step-item {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  margin-bottom: var(--space-16);
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-12);
+}
+
+.step-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+}
+
+.step-duration {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  background-color: var(--color-secondary);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-sm);
+}
+
+.resources-list {
+  list-style: none;
+  margin-top: var(--space-12);
+}
+
+.resource-item {
+  padding: var(--space-12);
+  margin-bottom: var(--space-8);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-base);
+  border: 1px solid var(--color-card-border-inner);
+}
+
+.resource-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+}
+
+.resource-name {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+}
+
+.resource-badges {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.badge {
+  font-size: var(--font-size-xs);
+  padding: var(--space-2) var(--space-6);
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.badge-free {
+  background-color: var(--color-bg-3);
+  color: var(--color-success);
+}
+
+.badge-paid {
+  background-color: var(--color-bg-4);
+  color: var(--color-error);
+}
+
+.resource-details {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.resource-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: var(--font-size-xs);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.resource-link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+/* Special Sections */
+.special-section {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  margin-bottom: var(--space-24);
+}
+
+.special-section h2 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-16);
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.special-section h3 {
+  font-size: var(--font-size-lg);
+  margin-top: var(--space-20);
+  margin-bottom: var(--space-12);
+}
+
+.special-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.special-section li {
+  padding: var(--space-8) 0;
+  padding-left: var(--space-20);
+  position: relative;
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+.special-section li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-16);
+  margin-top: var(--space-16);
+}
+
+.project-card {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+}
+
+.project-card h4 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-8);
+}
+
+.project-card .badge {
+  margin-bottom: var(--space-8);
+}
+
+.project-card p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-bottom: var(--space-8);
+}
+
+.project-skills {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+/* Certifications */
+.cert-section {
+  margin-bottom: var(--space-24);
+}
+
+.cert-section h4 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-12);
+  color: var(--color-primary);
+}
+
+.cert-list {
+  list-style: none;
+}
+
+.cert-item {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-12);
+  margin-bottom: var(--space-12);
+}
+
+.cert-item strong {
+  display: block;
+  margin-bottom: var(--space-4);
+  color: var(--color-text);
+}
+
+.cert-item small {
+  display: block;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-4);
+}
+
+/* Community Cards */
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-16);
+  margin-top: var(--space-16);
+}
+
+.community-card {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+}
+
+.community-card h4 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+}
+
+.community-card .type {
+  font-size: var(--font-size-xs);
+  color: var(--color-primary);
+  margin-bottom: var(--space-8);
+  display: block;
+}
+
+.community-card p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-8);
+}
+
+/* Timeline */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-16);
+  margin-top: var(--space-16);
+}
+
+.timeline-card {
+  background-color: var(--color-background);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+}
+
+.timeline-card h4 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-12);
+  color: var(--color-text);
+}
+
+.timeline-card strong {
+  display: block;
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-6);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+}
+
+.timeline-card ul {
+  list-style: none;
+  padding-left: var(--space-16);
+}
+
+.timeline-card li {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  padding: var(--space-4) 0;
+  position: relative;
+}
+
+.timeline-card li::before {
+  content: "✓";
+  position: absolute;
+  left: -16px;
+  color: var(--color-success);
+}
+
+/* Search Filter */
+.filter-section {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  margin-bottom: var(--space-24);
+}
+
+.filter-controls {
+  display: flex;
+  gap: var(--space-12);
+  flex-wrap: wrap;
+}
+
+.filter-controls input,
+.filter-controls select {
+  padding: var(--space-8) var(--space-12);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+}
+
+.filter-controls input {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  
+  .main-content {
+    padding: var(--space-16);
+  }
+  
+  .navbar-actions {
+    display: none;
+  }
+  
+  .stage-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-6);
+  }
+}
+
+@media print {
+  .sidebar,
+  .top-navbar,
+  .btn {
+    display: none;
+  }
+  
+  .stage-card {
+    page-break-inside: avoid;
+  }
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-right: var(--space-8);
+}
+
+.skills-checklist {
+  background-color: var(--color-bg-2);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  margin-top: var(--space-20);
+}
+
+.skills-checklist h4 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-12);
+  color: var(--color-text);
+}
+
+.skills-checklist label {
+  display: flex;
+  align-items: center;
+  padding: var(--space-6) 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.skills-checklist label:hover {
+  color: var(--color-primary);
+}
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navbar -->
+        <nav class="top-navbar">
+            <div class="navbar-brand">
+                <span class="flag">🇧🇩</span>
+                <h1>AI/Data Science Learning Roadmap</h1>
+            </div>
+            <div class="navbar-actions">
+                <button class="btn btn-secondary" onclick="window.print()">📄 Print Roadmap</button>
+                <button class="btn btn-primary" onclick="saveProgress()">💾 Save Progress</button>
+            </div>
+        </nav>
+
+        <div class="main-layout">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="job-role-selector">
+                    <label for="jobRole">Target Role</label>
+                    <select id="jobRole" onchange="changeJobRole()">
+                        <option value="all">All Tracks</option>
+                        <option value="rag_engineer">RAG Engineer</option>
+                        <option value="data_analyst">Data Analyst</option>
+                        <option value="business_analyst">Business Analyst</option>
+                    </select>
+                </div>
+
+                <div class="progress-tracker">
+                    <h3>My Progress</h3>
+                    <div class="overall-progress">
+                        <div class="progress-label">
+                            <span>Overall</span>
+                            <span id="overallProgress">0%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="overallProgressBar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <ul class="stage-progress-list" id="stageProgressList">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+
+                <h3>Quick Navigation</h3>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-nav-item"><a href="#stages" class="sidebar-nav-link">📚 Learning Stages</a></li>
+                    <li class="sidebar-nav-item"><a href="#portfolio" class="sidebar-nav-link">💼 Portfolio Projects</a></li>
+                    <li class="sidebar-nav-item"><a href="#certifications" class="sidebar-nav-link">🎓 Certifications</a></li>
+                    <li class="sidebar-nav-item"><a href="#interview" class="sidebar-nav-link">💡 Interview Prep</a></li>
+                    <li class="sidebar-nav-item"><a href="#linkedin" class="sidebar-nav-link">👔 LinkedIn Tips</a></li>
+                    <li class="sidebar-nav-item"><a href="#github" class="sidebar-nav-link">🔗 GitHub Guide</a></li>
+                    <li class="sidebar-nav-item"><a href="#bangladesh" class="sidebar-nav-link">🇧🇩 BD Communities</a></li>
+                    <li class="sidebar-nav-item"><a href="#timeline" class="sidebar-nav-link">⏱️ Timeline</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Hero Section -->
+                <section class="hero-section">
+                    <h2>Your Personalized AI &amp; Data Science Learning Path</h2>
+                    <p>A comprehensive roadmap to become job-ready in 6-12 months. From complete beginner to landing your dream role as a RAG Engineer, Data Analyst, or Business Analyst.</p>
+                    <div class="timeline-info">⏱️ Timeline: 6-12 months to job-ready | 📍 Tailored for Bangladesh</div>
+                </section>
+
+                <!-- Filter Section -->
+                <section class="filter-section">
+                    <div class="filter-controls">
+                        <input type="text" id="searchInput" placeholder="🔍 Search resources, topics, skills..." oninput="filterContent()">
+                        <select id="difficultyFilter" onchange="filterContent()">
+                            <option value="all">All Levels</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                        <select id="costFilter" onchange="filterContent()">
+                            <option value="all">All Resources</option>
+                            <option value="free">Free Only</option>
+                            <option value="paid">Paid</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- Learning Stages -->
+                <section id="stages" class="stages-container">
+                    <h2 style="font-size: var(--font-size-3xl); margin-bottom: var(--space-24);">📚 7-Stage Learning Path</h2>
+                    <div id="stagesContent">
+                        <!-- Populated by JS -->
+                    </div>
+                </section>
+
+                <!-- Portfolio Projects -->
+                <section id="portfolio" class="special-section">
+                    <h2>💼 Portfolio Building Projects</h2>
+                    <p style="color: var(--color-text-secondary); margin-bottom: var(--space-20);">Build these projects to showcase your skills and stand out to employers.</p>
+                    
+                    <h3>Beginner Projects</h3>
+                    <div class="project-grid" id="beginnerProjects"></div>
+                    
+                    <h3>Intermediate Projects</h3>
+                    <div class="project-grid" id="intermediateProjects"></div>
+                    
+                    <h3>Advanced Projects</h3>
+                    <div class="project-grid" id="advancedProjects"></div>
+                </section>
+
+                <!-- Certifications -->
+                <section id="certifications" class="special-section">
+                    <h2>🎓 Certifications Roadmap</h2>
+                    <p style="color: var(--color-text-secondary); margin-bottom: var(--space-20);">Strategic certifications to validate your skills and boost your resume.</p>
+                    
+                    <div class="cert-section">
+                        <h4>🌱 Beginner Certifications</h4>
+                        <ul class="cert-list" id="beginnerCerts"></ul>
+                    </div>
+                    
+                    <div class="cert-section">
+                        <h4>🚀 Intermediate Certifications</h4>
+                        <ul class="cert-list" id="intermediateCerts"></ul>
+                    </div>
+                    
+                    <div class="cert-section">
+                        <h4>⭐ Advanced Certifications</h4>
+                        <ul class="cert-list" id="advancedCerts"></ul>
+                    </div>
+                </section>
+
+                <!-- Interview Preparation -->
+                <section id="interview" class="special-section">
+                    <h2>💡 Interview Preparation Hub</h2>
+                    
+                    <h3>Common Interview Questions</h3>
+                    <ul id="interviewQuestions"></ul>
+                    
+                    <h3>Coding Practice Platforms</h3>
+                    <div class="project-grid" id="codingPlatforms"></div>
+                    
+                    <h3>Preparation Tips</h3>
+                    <ul id="prepTips"></ul>
+                </section>
+
+                <!-- LinkedIn Optimization -->
+                <section id="linkedin" class="special-section">
+                    <h2>👔 LinkedIn Profile Optimization</h2>
+                    
+                    <h3>Profile Tips</h3>
+                    <ul id="linkedinTips"></ul>
+                    
+                    <h3>Content Strategy</h3>
+                    <ul id="contentStrategy"></ul>
+                    
+                    <h3>Headline Examples</h3>
+                    <ul id="headlineExamples"></ul>
+                </section>
+
+                <!-- GitHub Optimization -->
+                <section id="github" class="special-section">
+                    <h2>🔗 GitHub Portfolio Guide</h2>
+                    
+                    <h3>Profile Optimization</h3>
+                    <ul id="githubTips"></ul>
+                    
+                    <h3>README Template Structure</h3>
+                    <ul id="readmeTemplate"></ul>
+                </section>
+
+                <!-- Bangladesh Resources -->
+                <section id="bangladesh" class="special-section">
+                    <h2>🇧🇩 Bangladesh Tech Communities &amp; Networking</h2>
+                    <p style="color: var(--color-text-secondary); margin-bottom: var(--space-20);">Connect with local tech communities and expand your professional network.</p>
+                    
+                    <h3>Key Communities</h3>
+                    <div class="community-grid" id="bangladeshCommunities"></div>
+                    
+                    <h3>Networking Tips for Bangladesh</h3>
+                    <ul id="networkingTips"></ul>
+                </section>
+
+                <!-- Timeline & Milestones -->
+                <section id="timeline" class="special-section">
+                    <h2>⏱️ 12-Month Timeline &amp; Milestones</h2>
+                    <p style="color: var(--color-text-secondary); margin-bottom: var(--space-20);">Follow this timeline to stay on track and reach your goals systematically.</p>
+                    <div class="timeline-grid" id="timelineContent"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Data
+const stagesData = [
+  {
+    id: 1,
+    name: "Foundation & Programming",
+    description: "Build core fundamentals in programming, math, and AI concepts",
+    duration: "4-6 weeks",
+    steps: [
+      {
+        step: 1,
+        title: "Understand what AI is",
+        resources: [
+          { name: "Elements of AI (Part 1)", type: "Free Online Course", link: "https://elementsofai.com", duration: "20-30 hours", cost: "Free" }
+        ]
+      },
+      {
+        step: 2,
+        title: "Explore real-world AI uses",
+        resources: [
+          { name: "AI Applications in Real Life", type: "Blog Posts/Medium", cost: "Free" }
+        ]
+      },
+      {
+        step: 3,
+        title: "Learn basic AI terms",
+        resources: [
+          { name: "Google AI Glossary", type: "Interactive Resource", cost: "Free" }
+        ]
+      },
+      {
+        step: 4,
+        title: "Master programming fundamentals",
+        resources: [
+          { name: "Python for Everybody (Coursera)", type: "Video Course", duration: "8 weeks", cost: "Free (audit)" },
+          { name: "Codecademy - Learn Python 3", type: "Interactive Course", duration: "Flexible", cost: "Free tier available" }
+        ]
+      },
+      {
+        step: 5,
+        title: "Start Python for AI",
+        resources: [
+          { name: "AI Python for Beginners", type: "Video Course", duration: "4 hours", cost: "Free" },
+          { name: "Python.org Official Docs", type: "Documentation", cost: "Free" }
+        ]
+      },
+      {
+        step: 6,
+        title: "Learn statistics & probability",
+        resources: [
+          { name: "Khan Academy - Statistics & Probability", type: "Video Tutorials", duration: "Flexible", cost: "Free" },
+          { name: "StatQuest (YouTube)", type: "YouTube Videos", cost: "Free" }
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: "Machine Learning Basics",
+    description: "Understand ML algorithms, learning types, and build first models",
+    duration: "6-8 weeks",
+    steps: [
+      {
+        step: 7,
+        title: "Study linear algebra basics",
+        resources: [
+          { name: "3Blue1Brown - Essence of Linear Algebra", type: "YouTube Series", duration: "15 hours", cost: "Free" }
+        ]
+      },
+      {
+        step: 8,
+        title: "Get into machine learning",
+        resources: [
+          { name: "Introduction to Machine Learning (Coursera)", type: "Video Course", instructor: "Andrew Ng", duration: "10 weeks", cost: "Free (audit)" }
+        ]
+      },
+      {
+        step: 9,
+        title: "Know ML learning types",
+        resources: [
+          { name: "Supervised vs Unsupervised Learning", type: "Medium Articles/Blog", cost: "Free" }
+        ]
+      },
+      {
+        step: 10,
+        title: "Explore ML algorithms",
+        resources: [
+          { name: "scikit-learn Documentation", type: "Official Docs + Tutorials", cost: "Free" },
+          { name: "ML Cheatsheet", type: "Reference", link: "https://ml-cheatsheet.io", cost: "Free" }
+        ]
+      },
+      {
+        step: 11,
+        title: "Build a simple ML project",
+        resources: [
+          { name: "Kaggle - Titanic Challenge", type: "Hands-on Project", difficulty: "Beginner", cost: "Free" }
+        ]
+      },
+      {
+        step: 12,
+        title: "Learn neural networks basics",
+        resources: [
+          { name: "Neural Networks from Scratch", type: "Book/Tutorial", cost: "Free resources available" }
+        ]
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: "Tools & First Deep Models",
+    description: "Master frameworks, build and evaluate your first models",
+    duration: "6-8 weeks",
+    steps: [
+      {
+        step: 13,
+        title: "Understand model architecture",
+        resources: [
+          { name: "Inside Neural Networks", type: "YouTube/Blog Posts", cost: "Free" }
+        ]
+      },
+      {
+        step: 14,
+        title: "Use TensorFlow or PyTorch",
+        resources: [
+          { name: "TensorFlow Official Tutorials", type: "Interactive Course", cost: "Free" },
+          { name: "PyTorch Official Tutorials", type: "Interactive Course", cost: "Free" }
+        ]
+      },
+      {
+        step: 15,
+        title: "Train your first model",
+        resources: [
+          { name: "Your First ML Model (Kaggle)", type: "Guided Project", cost: "Free" }
+        ]
+      },
+      {
+        step: 16,
+        title: "Handle overfitting/underfitting",
+        resources: [
+          { name: "StatQuest - Overfitting", type: "YouTube Videos", cost: "Free" }
+        ]
+      },
+      {
+        step: 17,
+        title: "Clean and prepare data",
+        resources: [
+          { name: "Pandas Data Cleaning Tutorials", type: "YouTube/Documentation", cost: "Free" }
+        ]
+      },
+      {
+        step: 18,
+        title: "Evaluate with accuracy, F1",
+        resources: [
+          { name: "scikit-learn Metrics", type: "Documentation", cost: "Free" }
+        ]
+      },
+      {
+        step: 19,
+        title: "Explore CNNs and RNNs",
+        resources: [
+          { name: "Deeplearning.ai CNN Course", type: "Video Course", cost: "Free/Paid" }
+        ]
+      },
+      {
+        step: 20,
+        title: "Try a computer vision task",
+        resources: [
+          { name: "OpenCV Python Tutorials", type: "Video Tutorials", cost: "Free" }
+        ]
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: "Advanced ML & Specializations",
+    description: "Dive into NLP, GANs, RL, and create advanced projects",
+    duration: "8-10 weeks",
+    steps: [
+      {
+        step: 21,
+        title: "Start with NLP basics",
+        resources: [
+          { name: "NLP with Python (NLTK Book)", type: "Free eBook", cost: "Free" },
+          { name: "spaCy Documentation", type: "Documentation", cost: "Free" }
+        ]
+      },
+      {
+        step: 22,
+        title: "Use NLTK or spaCy",
+        resources: [
+          { name: "spaCy Advanced Tutorials", type: "YouTube/Docs", cost: "Free" }
+        ]
+      },
+      {
+        step: 23,
+        title: "Learn reinforcement learning",
+        resources: [
+          { name: "OpenAI Spinning Up", type: "Free Course", duration: "Variable", cost: "Free" },
+          { name: "DeepLizard RL Series", type: "YouTube Series", cost: "Free" }
+        ]
+      },
+      {
+        step: 24,
+        title: "Build simple RL agent",
+        resources: [
+          { name: "CartPole-v1 Walkthrough", type: "YouTube Tutorial", cost: "Free" }
+        ]
+      },
+      {
+        step: 25,
+        title: "Study GANs and VAEs",
+        resources: [
+          { name: "GANs Explained", type: "YouTube/Medium", cost: "Free" }
+        ]
+      },
+      {
+        step: 26,
+        title: "Create a generative model",
+        resources: [
+          { name: "PyTorch GAN Examples", type: "Official Tutorials", cost: "Free" }
+        ]
+      }
+    ]
+  },
+  {
+    id: 5,
+    name: "Deployment & Industry Skills",
+    description: "Learn ethics, cloud deployment, business applications",
+    duration: "6-8 weeks",
+    steps: [
+      {
+        step: 27,
+        title: "Learn AI ethics & bias",
+        resources: [
+          { name: "fast.ai Ethics Module", type: "Free Course", cost: "Free" },
+          { name: "AI Fairness (Google Resources)", type: "Guides/Articles", cost: "Free" }
+        ]
+      },
+      {
+        step: 28,
+        title: "Explore AI industry uses",
+        resources: [
+          { name: "Harvard Business Review Articles", type: "Blog Posts", cost: "Some free, some paywalled" }
+        ]
+      },
+      {
+        step: 29,
+        title: "Use cloud AI tools",
+        resources: [
+          { name: "Google Cloud AI Labs", type: "Hands-on Labs", cost: "Free tier available" },
+          { name: "AWS AI/ML Services", type: "Documentation", cost: "Free tier available" }
+        ]
+      },
+      {
+        step: 30,
+        title: "Deploy models to cloud",
+        resources: [
+          { name: "Deploy ML Models Tutorial", type: "YouTube", cost: "Free" },
+          { name: "Flask API Examples", type: "Documentation", cost: "Free" }
+        ]
+      },
+      {
+        step: 31,
+        title: "Study AI in business",
+        resources: [
+          { name: "AI in Business Case Studies", type: "Articles/Papers", cost: "Mostly free" }
+        ]
+      },
+      {
+        step: 32,
+        title: "Match tasks to algorithms",
+        resources: [
+          { name: "ML Algorithm Selection Guide", type: "Reference", cost: "Free" }
+        ]
+      },
+      {
+        step: 33,
+        title: "Learn Hadoop or Spark",
+        resources: [
+          { name: "Databricks Community Edition", type: "Hands-on Platform", cost: "Free" },
+          { name: "Apache Spark Official Docs", type: "Documentation", cost: "Free" }
+        ]
+      },
+      {
+        step: 34,
+        title: "Analyze time series data",
+        resources: [
+          { name: "Time Series Analysis Guide", type: "Tutorial", cost: "Free" }
+        ]
+      },
+      {
+        step: 35,
+        title: "Apply model tuning techniques",
+        resources: [
+          { name: "Hyperparameter Tuning (Kaggle)", type: "Tutorial", cost: "Free" },
+          { name: "scikit-learn Tuning Guide", type: "Documentation", cost: "Free" }
+        ]
+      }
+    ]
+  },
+  {
+    id: 6,
+    name: "Portfolio & Community Building",
+    description: "Build projects, compete, contribute to open source",
+    duration: "4-6 weeks",
+    steps: [
+      {
+        step: 36,
+        title: "Use transfer learning models",
+        resources: [
+          { name: "Keras Pretrained Models", type: "Tutorial", cost: "Free" }
+        ]
+      },
+      {
+        step: 37,
+        title: "Read AI research papers",
+        resources: [
+          { name: "arXiv.org", type: "Research Papers", cost: "Free" },
+          { name: "Google Scholar", type: "Paper Search", cost: "Free" }
+        ]
+      },
+      {
+        step: 38,
+        title: "Contribute to open-source AI",
+        resources: [
+          { name: "GitHub Beginner-Friendly Repos", type: "GitHub", cost: "Free" }
+        ]
+      },
+      {
+        step: 39,
+        title: "Join Kaggle competitions",
+        resources: [
+          { name: "Kaggle Competitions", type: "Platform", cost: "Free" }
+        ]
+      },
+      {
+        step: 40,
+        title: "Build your AI portfolio",
+        resources: [
+          { name: "GitHub Pages", type: "Free Hosting", cost: "Free" },
+          { name: "Personal Portfolio Site", type: "Personal Project", cost: "Free-Paid" }
+        ]
+      }
+    ]
+  },
+  {
+    id: 7,
+    name: "Expert Skills & Networking",
+    description: "Stay current, get certified, build professional network",
+    duration: "Ongoing",
+    steps: [
+      {
+        step: 41,
+        title: "Learn advanced AI topics",
+        resources: [
+          { name: "Research Paper Deep Dives", type: "Self-Study", cost: "Free" }
+        ]
+      },
+      {
+        step: 42,
+        title: "Follow latest AI trends",
+        resources: [
+          { name: "Substack AI Newsletters", type: "Newsletter", cost: "Free/Paid" },
+          { name: "AI News Sites", type: "Blogs", cost: "Free" }
+        ]
+      },
+      {
+        step: 43,
+        title: "Attend AI events online",
+        resources: [
+          { name: "DataHack Summit", type: "Virtual Event", cost: "Free/Paid" },
+          { name: "Local Meetups", type: "In-person/Virtual", cost: "Free" }
+        ]
+      },
+      {
+        step: 44,
+        title: "Join AI communities",
+        resources: [
+          { name: "Discord AI Servers", type: "Community", cost: "Free" },
+          { name: "r/MachineLearning (Reddit)", type: "Community", cost: "Free" },
+          { name: "LinkedIn AI Groups", type: "Community", cost: "Free" }
+        ]
+      },
+      {
+        step: 45,
+        title: "Earn AI certifications",
+        resources: [
+          { name: "Google Professional ML Engineer", type: "Certification", cost: "Exam fee ~$200" },
+          { name: "Coursera Deep Learning Specialization", type: "Certification", cost: "$39-59/month" },
+          { name: "IBM AI Engineering Certificate", type: "Certification", cost: "$39-59/month" }
+        ]
+      },
+      {
+        step: 46,
+        title: "Read AI expert blogs",
+        resources: [
+          { name: "Distill.pub", type: "Blog", cost: "Free" },
+          { name: "Andrej Karpathy's Blog", type: "Blog", cost: "Free" }
+        ]
+      },
+      {
+        step: 47,
+        title: "Watch expert AI tutorials",
+        resources: [
+          { name: "YouTube (TensorFlow, PyTorch)", type: "Video Tutorials", cost: "Free" },
+          { name: "DeepLearning.ai Courses", type: "Video Course", cost: "Free/Paid" }
+        ]
+      },
+      {
+        step: 48,
+        title: "Pick a focus area",
+        resources: [
+          { name: "Specialization Roadmaps", type: "Self-Curated Learning", cost: "Free" }
+        ]
+      },
+      {
+        step: 49,
+        title: "Combine AI with other fields",
+        resources: [
+          { name: "Cross-Domain AI Projects", type: "Personal Projects", cost: "Free" }
+        ]
+      },
+      {
+        step: 50,
+        title: "Teach and share knowledge",
+        resources: [
+          { name: "Blog Posts & Tutorials", type: "Content Creation", cost: "Free" },
+          { name: "Mentoring Beginners", type: "Community", cost: "Free" }
+        ]
+      }
+    ]
+  }
+];
+
+const portfolioProjects = {
+  beginner: [
+    { title: "Titanic Survival Prediction", platform: "Kaggle", skills: ["Data Cleaning", "EDA", "Classification"], time: "1-2 weeks", description: "Classic beginner project - predict passenger survival" },
+    { title: "Iris Flower Classification", platform: "Kaggle", skills: ["Data Analysis", "Classification"], time: "3-5 days", description: "Perfect introduction to ML classification" },
+    { title: "Movie Rating Analysis", platform: "Personal Project", skills: ["Data Cleaning", "Visualization", "Analysis"], time: "1 week", description: "Analyze movie data, create visualizations" }
+  ],
+  intermediate: [
+    { title: "Retail Sales Forecasting", platform: "Kaggle", skills: ["Time Series", "Forecasting", "SQL"], time: "2-3 weeks", description: "Predict sales using historical data" },
+    { title: "Sentiment Analysis on Tweets", platform: "Kaggle", skills: ["NLP", "Classification", "Text Processing"], time: "2-3 weeks", description: "Classify tweet sentiments using NLP" },
+    { title: "Customer Churn Prediction", platform: "Personal Project", skills: ["Classification", "Feature Engineering"], time: "2-3 weeks", description: "Predict which customers will leave" }
+  ],
+  advanced: [
+    { title: "Recommendation System", platform: "Personal Project", skills: ["Collaborative Filtering", "Matrix Factorization"], time: "3-4 weeks", description: "Build product or user recommendation system" },
+    { title: "RAG System with LLM", platform: "Personal Project", skills: ["LLMs", "Vector DB", "Retrieval"], time: "4-6 weeks", description: "Build retrieval-augmented generation system" },
+    { title: "Computer Vision Image Classifier", platform: "Kaggle", skills: ["CNNs", "Transfer Learning", "Deep Learning"], time: "3-4 weeks", description: "Build image classification model using CNNs" }
+  ]
+};
+
+const certifications = {
+  beginner: [
+    { name: "Google AI Crash Course", duration: "4-5 hours", cost: "Free", focus: "AI fundamentals" },
+    { name: "IBM AI Fundamentals", duration: "8-10 hours", cost: "Free/Paid", focus: "AI basics" },
+    { name: "OpenAI Academy", duration: "Variable", cost: "Free", focus: "ChatGPT and LLMs" }
+  ],
+  intermediate: [
+    { name: "Google Professional Machine Learning Engineer", duration: "3-4 months", cost: "Exam: ~$200", focus: "Cloud ML systems" },
+    { name: "Coursera Deep Learning Specialization", duration: "4-5 months", cost: "$39-59/month", focus: "Deep learning", instructor: "Andrew Ng" },
+    { name: "AWS Machine Learning Specialty", duration: "3-4 months", cost: "Exam: ~$150", focus: "AWS ML services" },
+    { name: "IBM AI Engineering Professional Certificate", duration: "6 months", cost: "$39-59/month", focus: "Practical AI development" }
+  ],
+  advanced: [
+    { name: "Stanford AI Graduate Certificate", duration: "12-18 months", cost: "~$5000-10000", focus: "Advanced AI theory and applications" },
+    { name: "NVIDIA Deep Learning Institute", duration: "Variable", cost: "$30-500", focus: "GPU computing and deep learning" }
+  ]
+};
+
+const interviewPrep = {
+  questions: [
+    "What is the difference between supervised and unsupervised learning?",
+    "Explain overfitting and how to prevent it",
+    "What is the bias-variance tradeoff?",
+    "How do you handle missing data?",
+    "Explain the difference between classification and regression",
+    "What is cross-validation and why is it important?",
+    "How do you evaluate a classification model?",
+    "What is feature engineering?"
+  ],
+  platforms: [
+    { name: "LeetCode", focus: "Algorithm and data structure problems", difficulty: "Easy to Hard", cost: "Free tier + Premium" },
+    { name: "HackerRank", focus: "Practical coding challenges", difficulty: "Beginner to Advanced", cost: "Free tier + Premium" },
+    { name: "Kaggle", focus: "Data science competitions", difficulty: "All levels", cost: "Free" }
+  ],
+  tips: [
+    "Practice coding problems 30 mins daily",
+    "Solve previous company interview questions",
+    "Read about the company's AI/ML initiatives",
+    "Build 2-3 solid projects to showcase",
+    "Practice mock interviews with friends",
+    "Review system design patterns",
+    "Study your projects thoroughly to explain in interviews"
+  ]
+};
+
+const linkedinOptimization = {
+  profileTips: [
+    "Use a clear, professional profile photo",
+    "Write a compelling headline with keywords (Python, SQL, ML, etc.)",
+    "Add 50 relevant skills to your profile",
+    "Write an 'About' section highlighting what you do and your goals",
+    "List all certifications and courses completed",
+    "Add portfolio projects in the 'Featured' section",
+    "Request recommendations from mentors/colleagues",
+    "Update your profile monthly with new achievements",
+    "Enable 'Open to Work' status for recruiters"
+  ],
+  contentStrategy: [
+    "Post 1-2 times per week about learning insights",
+    "Share project screenshots with explanations",
+    "Engage with AI/ML industry content",
+    "Join and participate in LinkedIn groups",
+    "Write short articles about tools or concepts you learned",
+    "Connect with people in your target companies",
+    "Follow industry leaders and comment on their posts"
+  ],
+  headlines: [
+    "Data Scientist | Python, SQL, Machine Learning | Open to Opportunities",
+    "AI/ML Engineer | NLP & Deep Learning | Building Intelligent Solutions",
+    "Data Analyst | Python, SQL, Power BI | Turning Data into Insights",
+    "RAG Engineer | LLMs, Vector Databases | AI Systems Developer"
+  ]
+};
+
+const githubOptimization = {
+  profileTips: [
+    "Add a professional profile README",
+    "Customize your GitHub profile picture",
+    "Include links to LinkedIn and portfolio site",
+    "Pin your 6 best projects to your profile",
+    "Ensure project READMEs are comprehensive",
+    "Keep repositories updated and maintained",
+    "Contribute to open-source projects regularly",
+    "Add clear descriptions to all repositories",
+    "Use consistent naming conventions"
+  ],
+  readmeTemplate: [
+    "Project title and description",
+    "Technologies/languages used",
+    "How to install and run the project",
+    "Project features and demo screenshots",
+    "Results and insights gained",
+    "Link to detailed blog post or documentation"
+  ]
+};
+
+const bangladeshResources = {
+  communities: [
+    { name: "BASIS (Bangladesh Association of Software and Information Services)", type: "Professional Organization", events: "Workshops, conferences, networking events", link: "https://basis.org.bd" },
+    { name: "Google Developer Group Dhaka", type: "Community", events: "Tech talks, workshops, hackathons", link: "https://gdg.community.dev" },
+    { name: "CodersTrust Bangladesh", type: "Training Platform", focus: "Coding skills and tech training", events: "" },
+    { name: "Startup Dhaka", type: "Community", events: "Networking, pitch competitions", focus: "" },
+    { name: "Women in Digital Bangladesh", type: "Community", focus: "Empowering women in tech", events: "" }
+  ],
+  networkingTips: [
+    "Attend BASIS SoftExpo and networking events",
+    "Join Google Developer Group Dhaka meetups",
+    "Participate in CodersTrust courses for community connections",
+    "Engage actively on LinkedIn with Bangladesh tech professionals",
+    "Connect with alumni who moved to tech roles",
+    "Join online AI/ML communities (Discord, Reddit)",
+    "Follow up consistently with new connections"
+  ]
+};
+
+const timeline = [
+  {
+    title: "Foundation Month 1-2",
+    goals: ["Complete Python fundamentals course", "Understand basic ML concepts", "Set up development environment", "Create GitHub account and first repo"],
+    deliverables: ["10+ Python practice problems solved", "GitHub profile created with README", "First simple Python project uploaded"]
+  },
+  {
+    title: "ML Learning Month 3-4",
+    goals: ["Complete ML basics course", "Build first ML model", "Start first portfolio project"],
+    deliverables: ["Kaggle account created", "First model trained and evaluated", "First portfolio project completed"]
+  },
+  {
+    title: "Specialization Month 5-6",
+    goals: ["Choose specialization (NLP/Vision/RL/RAG)", "Build 2 advanced projects", "Join Kaggle competition"],
+    deliverables: ["2 intermediate projects on GitHub", "Kaggle profile with submissions", "LinkedIn profile optimized"]
+  },
+  {
+    title: "Portfolio Building Month 7-8",
+    goals: ["Build 3-4 professional projects", "Get certifications started", "Network actively"],
+    deliverables: ["3-4 polished portfolio projects", "First certification earned/in progress", "50+ LinkedIn connections from target companies"]
+  },
+  {
+    title: "Interview Prep Month 9-10",
+    goals: ["Complete coding interview prep", "Finish certifications", "Build professional network"],
+    deliverables: ["Completed LeetCode/HackerRank challenges", "Certifications earned", "Mock interviews completed"]
+  },
+  {
+    title: "Job Search Month 11-12",
+    goals: ["Start active job search", "Apply to target companies", "Network with recruiters"],
+    deliverables: ["20+ applications sent", "Interview calls received", "Job offers (goal!)"]
+  }
+];
+
+// State management using JavaScript variables
+let completedSteps = {};
+let currentJobRole = 'all';
+
+// Initialize the app
+function initApp() {
+  renderStages();
+  renderPortfolioProjects();
+  renderCertifications();
+  renderInterviewPrep();
+  renderLinkedInOptimization();
+  renderGitHubOptimization();
+  renderBangladeshResources();
+  renderTimeline();
+  updateProgress();
+}
+
+// Render stages
+function renderStages() {
+  const container = document.getElementById('stagesContent');
+  container.innerHTML = stagesData.map(stage => `
+    <div class="stage-card" id="stage-${stage.id}">
+      <div class="stage-header" onclick="toggleStage(${stage.id})">
+        <div class="stage-title-section">
+          <span class="stage-number">${stage.id}</span>
+          <div class="stage-info">
+            <h3>${stage.name}</h3>
+            <div class="stage-meta">
+              <span>⏱️ ${stage.duration}</span>
+              <span>📝 ${stage.steps.length} steps</span>
+            </div>
+          </div>
+        </div>
+        <span class="stage-expand-icon">▼</span>
+      </div>
+      <div class="stage-content">
+        <p class="stage-description">${stage.description}</p>
+        <div class="steps-list">
+          ${stage.steps.map(step => `
+            <div class="step-item">
+              <div class="step-header">
+                <div class="step-title">Step ${step.step}: ${step.title}</div>
+                ${step.resources[0].duration ? `<span class="step-duration">${step.resources[0].duration}</span>` : ''}
+              </div>
+              <ul class="resources-list">
+                ${step.resources.map(resource => `
+                  <li class="resource-item">
+                    <div class="resource-header">
+                      <span class="resource-name">${resource.name}</span>
+                      <div class="resource-badges">
+                        <span class="badge ${resource.cost.toLowerCase().includes('free') ? 'badge-free' : 'badge-paid'}">
+                          ${resource.cost.toLowerCase().includes('free') ? 'Free' : 'Paid'}
+                        </span>
+                      </div>
+                    </div>
+                    <div class="resource-details">${resource.type}${resource.instructor ? ' • ' + resource.instructor : ''}</div>
+                    ${resource.link ? `<a href="${resource.link}" target="_blank" class="resource-link">🔗 Visit Resource →</a>` : ''}
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+          `).join('')}
+        </div>
+        <div class="skills-checklist">
+          <h4>✅ Skills to Master in This Stage</h4>
+          ${generateSkillsChecklist(stage.id)}
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function generateSkillsChecklist(stageId) {
+  const skills = {
+    1: ['Python Basics', 'Statistics & Probability', 'AI Concepts', 'Development Environment Setup'],
+    2: ['Linear Algebra', 'ML Algorithms', 'Supervised vs Unsupervised Learning', 'Model Training'],
+    3: ['TensorFlow/PyTorch', 'Data Cleaning', 'Model Evaluation', 'CNNs & RNNs', 'Computer Vision'],
+    4: ['NLP Techniques', 'Reinforcement Learning', 'GANs & VAEs', 'Advanced Modeling'],
+    5: ['AI Ethics', 'Cloud Deployment', 'Big Data Tools', 'Model Tuning', 'Business Applications'],
+    6: ['Transfer Learning', 'Open Source Contribution', 'Portfolio Building', 'Kaggle Competitions'],
+    7: ['Research Papers', 'Industry Trends', 'Professional Networking', 'Certifications', 'Teaching & Mentoring']
+  };
+  
+  return skills[stageId].map((skill, idx) => `
+    <label>
+      <input type="checkbox" onchange="updateProgress()" data-stage="${stageId}" data-skill="${idx}">
+      ${skill}
+    </label>
+  `).join('');
+}
+
+function toggleStage(stageId) {
+  const card = document.getElementById(`stage-${stageId}`);
+  card.classList.toggle('expanded');
+}
+
+function renderPortfolioProjects() {
+  const beginnerContainer = document.getElementById('beginnerProjects');
+  const intermediateContainer = document.getElementById('intermediateProjects');
+  const advancedContainer = document.getElementById('advancedProjects');
+  
+  beginnerContainer.innerHTML = portfolioProjects.beginner.map(project => createProjectCard(project, 'Beginner')).join('');
+  intermediateContainer.innerHTML = portfolioProjects.intermediate.map(project => createProjectCard(project, 'Intermediate')).join('');
+  advancedContainer.innerHTML = portfolioProjects.advanced.map(project => createProjectCard(project, 'Advanced')).join('');
+}
+
+function createProjectCard(project, level) {
+  return `
+    <div class="project-card">
+      <span class="badge ${level === 'Beginner' ? 'badge-free' : level === 'Intermediate' ? 'badge-paid' : 'badge-free'}" style="background-color: var(--color-bg-${level === 'Beginner' ? '3' : level === 'Intermediate' ? '2' : '5'});">${level}</span>
+      <h4>${project.title}</h4>
+      <p>${project.description}</p>
+      <p><strong>Platform:</strong> ${project.platform}</p>
+      <p><strong>Time:</strong> ${project.time}</p>
+      <div class="project-skills"><strong>Skills:</strong> ${project.skills.join(', ')}</div>
+    </div>
+  `;
+}
+
+function renderCertifications() {
+  document.getElementById('beginnerCerts').innerHTML = certifications.beginner.map(cert => `
+    <li class="cert-item">
+      <strong>${cert.name}</strong>
+      <div style="margin-top: 8px; font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+        <div>Focus: ${cert.focus}</div>
+        <div>Duration: ${cert.duration}</div>
+        <div>Cost: ${cert.cost}</div>
+      </div>
+    </li>
+  `).join('');
+  
+  document.getElementById('intermediateCerts').innerHTML = certifications.intermediate.map(cert => `
+    <li class="cert-item">
+      <strong>${cert.name}</strong>
+      ${cert.instructor ? `<div style="font-size: var(--font-size-sm); color: var(--color-primary); margin-top: 4px;">By ${cert.instructor}</div>` : ''}
+      <div style="margin-top: 8px; font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+        <div>Focus: ${cert.focus}</div>
+        <div>Duration: ${cert.duration}</div>
+        <div>Cost: ${cert.cost}</div>
+      </div>
+    </li>
+  `).join('');
+  
+  document.getElementById('advancedCerts').innerHTML = certifications.advanced.map(cert => `
+    <li class="cert-item">
+      <strong>${cert.name}</strong>
+      <div style="margin-top: 8px; font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+        <div>Focus: ${cert.focus}</div>
+        <div>Duration: ${cert.duration}</div>
+        <div>Cost: ${cert.cost}</div>
+      </div>
+    </li>
+  `).join('');
+}
+
+function renderInterviewPrep() {
+  document.getElementById('interviewQuestions').innerHTML = interviewPrep.questions.map(q => `<li>${q}</li>`).join('');
+  document.getElementById('prepTips').innerHTML = interviewPrep.tips.map(tip => `<li>${tip}</li>`).join('');
+  
+  document.getElementById('codingPlatforms').innerHTML = interviewPrep.platforms.map(platform => `
+    <div class="project-card">
+      <h4>${platform.name}</h4>
+      <p><strong>Focus:</strong> ${platform.focus}</p>
+      <p><strong>Difficulty:</strong> ${platform.difficulty}</p>
+      <p><strong>Cost:</strong> ${platform.cost}</p>
+    </div>
+  `).join('');
+}
+
+function renderLinkedInOptimization() {
+  document.getElementById('linkedinTips').innerHTML = linkedinOptimization.profileTips.map(tip => `<li>${tip}</li>`).join('');
+  document.getElementById('contentStrategy').innerHTML = linkedinOptimization.contentStrategy.map(tip => `<li>${tip}</li>`).join('');
+  document.getElementById('headlineExamples').innerHTML = linkedinOptimization.headlines.map(h => `<li>${h}</li>`).join('');
+}
+
+function renderGitHubOptimization() {
+  document.getElementById('githubTips').innerHTML = githubOptimization.profileTips.map(tip => `<li>${tip}</li>`).join('');
+  document.getElementById('readmeTemplate').innerHTML = githubOptimization.readmeTemplate.map(item => `<li>${item}</li>`).join('');
+}
+
+function renderBangladeshResources() {
+  document.getElementById('bangladeshCommunities').innerHTML = bangladeshResources.communities.map(community => `
+    <div class="community-card">
+      <span class="type">${community.type}</span>
+      <h4>${community.name}</h4>
+      ${community.events ? `<p>${community.events}</p>` : ''}
+      ${community.focus ? `<p>${community.focus}</p>` : ''}
+      ${community.link ? `<a href="${community.link}" target="_blank" class="resource-link">🔗 Visit →</a>` : ''}
+    </div>
+  `).join('');
+  
+  document.getElementById('networkingTips').innerHTML = bangladeshResources.networkingTips.map(tip => `<li>${tip}</li>`).join('');
+}
+
+function renderTimeline() {
+  document.getElementById('timelineContent').innerHTML = timeline.map((month, idx) => `
+    <div class="timeline-card">
+      <h4>${month.title}</h4>
+      <strong>Goals:</strong>
+      <ul>
+        ${month.goals.map(goal => `<li>${goal}</li>`).join('')}
+      </ul>
+      <strong>Deliverables:</strong>
+      <ul>
+        ${month.deliverables.map(d => `<li>${d}</li>`).join('')}
+      </ul>
+    </div>
+  `).join('');
+}
+
+function updateProgress() {
+  const checkboxes = document.querySelectorAll('.skills-checklist input[type="checkbox"]');
+  const total = checkboxes.length;
+  const completed = Array.from(checkboxes).filter(cb => cb.checked).length;
+  const percentage = total > 0 ? Math.round((completed / total) * 100) : 0;
+  
+  document.getElementById('overallProgress').textContent = `${percentage}%`;
+  document.getElementById('overallProgressBar').style.width = `${percentage}%`;
+  
+  // Update stage progress list
+  const stageProgressList = document.getElementById('stageProgressList');
+  stageProgressList.innerHTML = stagesData.map(stage => {
+    const stageCheckboxes = document.querySelectorAll(`.skills-checklist input[data-stage="${stage.id}"]`);
+    const stageCompleted = Array.from(stageCheckboxes).filter(cb => cb.checked).length;
+    const stageTotal = stageCheckboxes.length;
+    const isCompleted = stageCompleted === stageTotal && stageTotal > 0;
+    
+    return `
+      <li class="stage-progress-item ${isCompleted ? 'completed' : ''}">
+        <span class="dot"></span>
+        <span>Stage ${stage.id}: ${Math.round((stageCompleted / stageTotal) * 100) || 0}%</span>
+      </li>
+    `;
+  }).join('');
+}
+
+function changeJobRole() {
+  currentJobRole = document.getElementById('jobRole').value;
+  // In a real app, this would filter/highlight relevant steps
+  alert(`Job role changed to: ${currentJobRole}. Content filtered for your target role!`);
+}
+
+function saveProgress() {
+  alert('Progress saved! (In a real app, this would save to a backend or download as JSON)');
+}
+
+function filterContent() {
+  const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  const difficultyFilter = document.getElementById('difficultyFilter').value;
+  const costFilter = document.getElementById('costFilter').value;
+  
+  // Simple search implementation - in production this would be more sophisticated
+  const allStageCards = document.querySelectorAll('.stage-card');
+  allStageCards.forEach(card => {
+    const text = card.textContent.toLowerCase();
+    const matchesSearch = text.includes(searchTerm);
+    card.style.display = matchesSearch ? 'block' : 'none';
+  });
+}
+
+// Initialize on page load
+window.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html>
